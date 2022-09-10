@@ -7,3 +7,11 @@
 // 12821 -> да
 
 // 23432 -> да
+
+string numW = Console.ReadLine();
+
+bool conditionOne = numW[0]==numW[4];
+bool conditionTwo = numW[1]==numW[3];
+
+if(conditionOne && conditionTwo) Console.WriteLine("y");
+else Console.WriteLine("n");
