@@ -6,4 +6,12 @@
 
 int n = Convert.ToInt32(Console.ReadLine());
 int n2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Math.Pow(n,n2));
+
+int result=1;
+for (int i = 0; i < n2; i++)
+{
+    result*=n;
+}
+Console.WriteLine(result);
+
+// Console.WriteLine(Math.Pow(n,n2));
