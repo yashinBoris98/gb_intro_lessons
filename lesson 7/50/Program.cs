@@ -19,7 +19,7 @@ double[,] CreateArray(int dim1, int dim2){
     {
      for (int k = 0; k < dim2; k++)
      {
-        Console.WriteLine(i+" "+k);
+        // Console.WriteLine(i+" "+k);
         arr[i,k]=rand.Next(-999,999);
      }   
     }
@@ -33,8 +33,8 @@ double[,] array = CreateArray(m,n);
 
 int a =Convert.ToInt32(Console.ReadLine());
 int b =Convert.ToInt32(Console.ReadLine());
-double? d = array[a,b];
-if (d!=null)
+// double? d = array[a,b];
+if (a<=m && b<=n)
 {
     Console.WriteLine("такой элемент есть");
 }

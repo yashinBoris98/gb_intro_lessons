@@ -31,13 +31,13 @@ int[][] array = CreateArray(m,n);
 int length = array.GetLength(0);
 for (int i = 0; i < length; i++)
 {
-    int[] subArr = new int[i];
-    subArr = array[i];
+    int[] subArr = array[i];
     int sum = 0;
     foreach (var item in subArr)
     {
         sum +=item;
     }
-    Console.WriteLine(sum);
+    double med = (double)sum/(double)subArr.Length;
+    Console.WriteLine(med);
 }
 
