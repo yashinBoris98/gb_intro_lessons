@@ -6,14 +6,17 @@
 
 // 9012 -> 12
 
-string num = Console.ReadLine();
+string? num = Console.ReadLine();
 int sum = 0;
-foreach (char item in num)
+if (num != null)
 {
-    // string w = item.ToString();
-    // int n = Convert.ToInt32(w);
-    // sum+=n;
-
-    sum+=Convert.ToInt32(item.ToString());
+    foreach (char item in num)
+    {
+        // string w = item.ToString();
+        // int n = Convert.ToInt32(w);
+        // sum+=n;
+    
+        sum+=Convert.ToInt32(item.ToString());
+    }
 }
 Console.WriteLine(sum);
