@@ -16,8 +16,8 @@ double[,] CreateArray(int dim1, int dim2){
     {
      for (int k = 0; k < dim2; k++)
      {
-        Console.WriteLine(i+" "+k);
-        arr[i,k]=rand.Next(-999,999);
+        // Console.WriteLine(i+" "+k);
+        arr[i,k]=rand.NextDouble();
      }   
     }
     return arr;
